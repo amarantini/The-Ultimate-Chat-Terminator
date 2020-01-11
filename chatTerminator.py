@@ -36,8 +36,8 @@ def chatGenerator(title, length=640):
         num = random.randint(0, 100)
         if num < 20:
             body += next(nextQuote) \
-                .replace('a', random.choice(data["before"])) \
-                .replace('b', random.choice(data['after']))
+                .replace('@', random.choice(data["before"])) \
+                .replace('$', random.choice(data['after']))
         else:
             body += next(nextBetween)
         body = body.replace("x", title)
