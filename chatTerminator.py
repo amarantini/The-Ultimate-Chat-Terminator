@@ -40,7 +40,7 @@ def chatGenerator(title, length=640):
                 .replace('$', random.choice(data['after']))
         else:
             body += next(nextBetween)
-        body = body.replace("x", title)
+        body = body.replace("*", title)
 
     return body
 
