@@ -1,12 +1,14 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 import random
 import json
 
-data = json.load(open("data.json", encoding="utf-8"))
+data = json.loads(open("data.json",mode='r').read())
 
-quote = data["famous"] # a 代表前面垫话，b代表后面垫话
-before = data["before"] # 在名人名言前面弄点废话
-after = data['after']  # 在名人名言后面弄点废话
-between = data['between'] # 代表文章主要废话来源
+quote = data["famous"] 
+before = data["before"] 
+after = data['after']  
+between = data['between'] 
 
 repeat = 2
 
@@ -27,23 +29,27 @@ def chatGenerator(title, length=640):
     :param length: length of message
     :return: response message
     """
+    global nextBetween
+    global nextQuote
     body = ""
     while len(body) < length:
         num = random.randint(0, 100)
-        if num < 10:
-            body += nextQuote \
+        if num < 20:
+            body += next(nextQuote) \
                 .replace('a', random.choice(data["before"])) \
                 .replace('b', random.choice(data['after']))
         else:
-            body += nextBetween
+            body += next(nextBetween)
         body = body.replace("x", title)
 
     return body
 
 
+    
+
 
 if __name__ == "__main__":
-    xx = input("Please input the the chat:")
+    xx = input("Please enter the chat:")
     tmp = chatGenerator(xx)
     print(tmp)
 
