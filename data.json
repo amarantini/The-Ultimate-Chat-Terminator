@@ -1,7 +1,71 @@
 {
-  "famous":[],
-  "before":[],
-  "after":[],
-  "between":[]
+  "famous":[
+    "Donald Trump @, No dream is too big. No challenge is too great. Nothing we want for our future is beyond our reach. $",
+    "Donald Trump @, Get going. Move forward. Aim High. Plan a takeoff. Don't just sit on the runway and hope someone will come along and push the airplane. $",
+    "Donald Trump @, Show me someone without an ego, and I'll show you a loser. $",
+    "Bennett Cerf @, The person who can bring the spirit of laughter into a room is indeed blessed. $",
+    "Lucretius @, The fall of dropping water wears away the Stone. $",
+    "Sheldon @, That's no reason to cry. One cries because one is sad. For example, I cry because others are stupid, and that makes me sad. $",
+    "Rebecca McClanahan @, The shortest distance between two points is always under construction. $",
+    "Ljupka Cvetanova @, Smile and the world will laugh at you. $"
+    
+  ],
+  "prefix":[
+    "Furthermore, ",
+    "Moreover, ",
+    "In addition, ",
+    "Similarly, ",
+    "With respect to ",
+    "Since that is so, ",
+    "Thus, ",
+    "Therefore, ",
+    "In other words, ",
+    "That is to say, "
+  ],
+
+  "before":[
+    "said before",
+    "onece said",
+    "said a famous word",
+    "once mentioned",
+    "concluded that",
+    "argued that",
+    "told us that",
+    "showed us that",
+    "mentioned that"
+  ],
+  "after":[
+    "That aroused my imagination. ",
+    "That solved my problem. ",
+    "This inspired me. ",
+    "I hope you can appreciate this sentence. ",
+    "This brought a new way of thinking it. ",
+    "This enlighten me.",
+    "This seems to answer my doubts. ",
+    "I can't help thinking about it.",
+    "Due to this sentence, we have to look at this question more carefully.",
+    "It reminds me.",
+    "I hope everyone can comprehensively understand this sentence.",
+    "Although the sentence is not long, it makes me think a lot.",
+    "This sentence may seem simple, but the meaning in it can make one think.",
+    "This sentence takes us to a new perspective to think about this problem:",
+    "This seems to answer my doubts.",
+    "I hope the world can become better with your contribution after you understand this quote."
+
+  ],
+  "between":[
+    "Now, it is very important to solve the problem of %. ",
+    "We have to face a very awkward fact, which is %. ",
+    "How % happen in that way, if we didn't do that, what will happen? ",
+    "And all these are not totally important, what is more important is %. ",
+    "%, how can we do that? ",
+    "What should we do to give rise to %, and what should we do to prevent %'s happening. ",
+    "What is the key point of %? ",
+    "When facing this difficult choice of %, I rarely slept well. ",
+    "If % takes place in our daliy life, we have to consider its consequence. ",
+    "I have been thinking about % for a long time. ",
+    "From my piont of view, % means a lot to me. "
+    
+  ]
 
 }

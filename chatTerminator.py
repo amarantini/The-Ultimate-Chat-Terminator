@@ -9,6 +9,7 @@ quote = data["famous"]
 before = data["before"] 
 after = data['after']  
 between = data['between'] 
+prefix = data['prefix']
 
 repeat = 2
 
@@ -22,6 +23,7 @@ def shuffleThrough(lst):
 
 nextBetween = shuffleThrough(between)
 nextQuote = shuffleThrough(quote)
+nextPrefix = shuffleThrough(prefix)
 
 def chatGenerator(title, length=640):
     """
@@ -31,16 +33,19 @@ def chatGenerator(title, length=640):
     """
     global nextBetween
     global nextQuote
+    global nextPrefix
     body = ""
     while len(body) < length:
         num = random.randint(0, 100)
-        if num < 20:
+        if num < 15:
+            body += next(nextPrefix)
+        elif num < 30:
             body += next(nextQuote) \
                 .replace('@', random.choice(data["before"])) \
                 .replace('$', random.choice(data['after']))
         else:
             body += next(nextBetween)
-        body = body.replace("*", title)
+        body = body.replace("%", title)
 
     return body
 
