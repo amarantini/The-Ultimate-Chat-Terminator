@@ -21,7 +21,7 @@ def shuffleThrough(lst):
 nextBetween = shuffleThrough(between)
 nextQuote = shuffleThrough(quote)
 
-def generator(title, length=640):
+def chatGenerator(title, length=640):
     """
     :param title: //
     :param length: length of message
@@ -44,16 +44,6 @@ def generator(title, length=640):
 
 if __name__ == "__main__":
     xx = input("Please input the the chat:")
-    for x in xx:
-        tmp = str()
-        while ( len(tmp) < 6000 ) :
-            分支 = random.randint(0,100)
-            if 分支 < 5:
-                tmp += 另起一段()
-            elif 分支 < 20 :
-                tmp += 来点名人名言()
-            else:
-                tmp += next(下一句废话)
-        tmp = tmp.replace("x",xx)
-        print(tmp)
+    tmp = chatGenerator(xx)
+    print(tmp)
 
