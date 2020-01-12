@@ -37,9 +37,9 @@ def chatGenerator(title, length=640):
     body = ""
     while len(body) < length:
         num = random.randint(0, 100)
-        if num < 15:
+    
+        if num < 30:
             body += next(nextPrefix)
-        elif num < 30:
             body += next(nextQuote) \
                 .replace('@', random.choice(data["before"])) \
                 .replace('$', random.choice(data['after']))
