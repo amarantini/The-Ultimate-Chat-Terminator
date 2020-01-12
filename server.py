@@ -6,17 +6,12 @@ app = Flask(__name__)
 def render_main():
   return render_template('index.html')
 
-"""@app.route('/my-link/')
-def my_link():
-  print ('I got clicked!')
-
-  return 'Click.'
-"""
 @app.route('/', methods = ['POST', 'GET'])
 def chat_output():
   if request.method == 'POST':
     result = request.form["chat"]
-    message = chatGenerator(result)
+    num = int(request.form["number"])
+    message = chatGenerator(result, num)
     return render_template('index.html',output=message)
 
 
