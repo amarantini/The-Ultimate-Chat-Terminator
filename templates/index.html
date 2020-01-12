@@ -1,24 +1,24 @@
 <!doctype html>
-
-<title>The Ultimate Chat Terminator</title> 
-<meta charset=utf-8> 
-
-
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>The Ultimate Chat Terminator</title> 
+        <meta charset=utf-8> 
+    </head>
+
     <body>
 
-<h1>The Ultimate Chat terminator</h1>
-<h2>Please enter the chat:</h2>
-<form action="#" method = "POST">
-    <p><input type="text" name="chat" value="watch movie"  /></p>
-    <p><input type="submit" value="Generate"></p>
-</form>
+    <h1 style="text-align: center;">The Ultimate Chat terminator</h1>
+    <h2 style="text-align: center;">Please enter the key word:</h2>
+    <form action="#" method = "POST">
+        <input style="font-size: 20px; left: 50%; margin-bottom: 10px; margin-left: 42.5%; border-color: grey;" id="textboxid" type="text" name="chat" value="watch movie" />
+        <div style="box-sizing: content-box; margin-left: 47%;"><input style="font-size: 20px;" type="submit" value="Generate" ></div>
+    </form>
 
 
-<!--<div></div><button onclick="chat_output()">Generate</button></div>-->
-<div id="message">
-    <p>{{ output }}</p>
-</div>
+    <div id="message">
+        <p style="font-size: 20px; margin-left: 50px; margin-right: 50px;">{{ output }}</p>
+    </div>
 
 
     </body>
